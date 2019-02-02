@@ -1,0 +1,61 @@
+<extension version="3.1" type="plugin" group="content">
+<name>emMap</name>
+<creationDate>2019-02-01</creationDate>
+<author>Krystian Imielski</author>
+<authorEmail>krystian.imielski@gmail.com</authorEmail>
+<authorUrl></authorUrl>
+<copyright>Copyright</copyright>
+<license>License, for example GNU/GPL</license>
+<version>0.1</version>
+<description>Plugin for displaying embed maps for Google Maps. Can be used for replace map created by System - Google Maps plugin ({mosmap}). 
+It works without API key. 
+USAGE (address): {emmap width='400'|height='200'|address='Cracow,Pawia 16,Poland'|zoom='8'}
+USAGE (lat,long): {emmap width='400'|height='200'|centerlat='38.446531'|centerlon='14.953766'|zoom='8'}
+</description>
+<files>
+   <filename plugin="emMap">emMap.php</filename>
+</files>
+<config>
+	<fields name="params">
+		<fieldset name="default-config" label="Default config">
+         <field name="tag" type="text"
+				description="eg. emmap (to replace maps created by plugin 'System - Google Maps', You can change this to tag used in plugin - default: mosmap ). Text without brackets."
+				label="Map tag without brackets"
+            default="emmap"
+			/>
+			<field name="width" type="text"
+				description="width in px"
+				label="Default map width"
+            default="400"
+			/>
+         <field name="height" type="text"
+				description="height in px"
+				label="Default map height"
+            default="200"
+			/>
+         <field name="latitude" type="text"
+				description="Latitude eg. 38.0000"
+				label="Default latitude"
+			/>
+         <field name="longitude" type="text"
+				description="Longitude eg. 25.0000"
+				label="Default longitude"
+			/>
+			<field name="address" type="text"
+				description="Map Address"
+				label="Default address"
+				default="Cracow,Pawia 16,Poland"
+			/>
+         <field name="zoom" type="text"
+				description="Map zoom"
+				label="Default map zoom"
+            default="8"
+			/>
+         <field name="customstyles" type="textarea"
+				description="Custom stylesheet"
+				label="Custom stylesheet"
+			/>
+		</fieldset>
+	</fields>
+</config>
+</extension>

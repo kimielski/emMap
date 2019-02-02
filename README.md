@@ -1,8 +1,7 @@
 emMap - Joomla map plugin 
 =============
 
-Plugin for displaying embed maps by  Google Maps. Can be used for replace map created by System - Google Maps plugin ({mosmap}). 
-
+Plugin for displaying embed maps by  Google Maps. Can be used for replace map created by System - Google Maps plugin ({mosmap}).  
 It works without API key.
 
 Instructions
@@ -15,20 +14,21 @@ To install plugin:
 
 Usage
 =============
-Just place in Your content short tag:
-*Address:*
-`{emmap width='400'|height='200'|address='Cracow,Pawia 16,Poland'|zoom='8'}`
- *Latitude, Longitude:*
-`{emmap width='400'|height='200'|centerlat='38.446531'|centerlon='14.953766'|zoom='8'}`
+Just place in Your content short tag:  
+
+*Address:*  
+`{emmap width='400'|height='200'|address='Cracow,Pawia 16,Poland'|zoom='8'}`  
+ *Latitude, Longitude:*  
+`{emmap width='400'|height='200'|centerlat='38.446531'|centerlon='14.953766'|zoom='8'}`  
 
 Parameters
 =============
-**width** - map container width in px
-**height** - map container height in px
-**address** - address that will be visible on the map
-**zoom** - map zoom (0-18)
-**centerlat** - (latitude) geographic coordinate that specifies the north–south position of a point on the Earth's surface.
-**centerlon** - (longitude) geographic coordinate that specifies the east–west position of a point on the Earth's surface.
+**width** - map container width in px  
+**height** - map container height in px  
+**address** - address that will be visible on the map  
+**zoom** - map zoom (0-18)  
+**centerlat** - (latitude) geographic coordinate that specifies the north–south position of a point on the Earth's surface.  
+**centerlon** - (longitude) geographic coordinate that specifies the east–west position of a point on the Earth's surface.  
 
 **Important!** 
 If You define both options: address and centerlat, centerlon in the same map - address will be ignored.
